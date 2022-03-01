@@ -1,0 +1,10 @@
+# ninja log v5
+2	290	6678339356697353	CMakeFiles/SlimeMaths.dir/main.cpp.obj	f63fb74718cecf40
+290	386	6678339357622524	SlimeMaths.exe	236e28c1d239a2ba
+12	76	6678338791766636	CMakeFiles/SlimeMaths.dir/Mat4.cpp.obj	15a23e33003b9f7c
+2	86	6678332702654071	CMakeFiles/SlimeMaths.dir/Vec4.cpp.obj	b9a0f1592a2c8d3a
+2	75	6678338791751627	CMakeFiles/SlimeMaths.dir/Vec3.cpp.obj	2e2b190983ebe901
+15	74	6678345498124050	CMakeFiles/SlimeMaths.dir/Transform.cpp.obj	be8329d32d6683b1
+2	83	6678345498234076	CMakeFiles/SlimeMaths.dir/Mat4.cpp.obj	15a23e33003b9f7c
+12	338	6678345500784516	CMakeFiles/SlimeMaths.dir/main.cpp.obj	f63fb74718cecf40
+338	433	6678345501694676	SlimeMaths.exe	e45143cf38664022
