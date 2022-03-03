@@ -4,32 +4,31 @@
 
 #ifndef SLIMEMATHS_MAT4_H
 #define SLIMEMATHS_MAT4_H
+
 #include "Vec3.h"
+#include <string>
 
 struct Mat4 {
-    float m[4][4] =
-            {
-            {1.0f,0.0f,0.0f,0.0f},
-            {0.0f,1.0f,0.0f,0.0f},
-            {0.0f,0.0f,1.0f,0.0f},
-            {0.0f,0.0f,0.0f,1.0f}
-            };
+    // Matrix
+    float m[4][4]{};
 
+    // static matrix's
+    static Mat4 identity();
+    static Mat4 zero();
+
+    // Constructors
     Mat4() = default;
     explicit Mat4(float (*members)[4]);
-    explicit Mat4(const Vec3& xyz);
+    explicit Mat4(const Vec3 &xyz);
 
-    Mat4 operator*(const Mat4& other);
+    // Overriders
+    Mat4& operator=(const Mat4 &other);
 
-    Mat4& scale();
-    Mat4& rotate();
-    Mat4& ortho();
-    Mat4& perspective();
-    Mat4& look_at();
-    Mat4& translate();
-    Mat4& trs(); // Translate, rotate, scale
+    // Debug
+    std::string debug_output();
 
-
+    // Properties
+    bool is_identity();
 };
 
 

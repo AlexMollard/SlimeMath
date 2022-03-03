@@ -37,3 +37,7 @@ Vec3 Vec3::cross(const Vec3 &other) {
         ((x * other.y) - (y * other.x))
     };
 }
+
+Vec3 Vec3::up() {
+    return {0,1,0};
+}

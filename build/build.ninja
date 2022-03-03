@@ -73,6 +73,12 @@ build CMakeFiles/SlimeMaths.dir/Transform.cpp.obj: CXX_COMPILER__SlimeMaths_Debu
   OBJECT_DIR = CMakeFiles\SlimeMaths.dir
   OBJECT_FILE_DIR = CMakeFiles\SlimeMaths.dir
 
+build CMakeFiles/SlimeMaths.dir/Quaternion.cpp.obj: CXX_COMPILER__SlimeMaths_Debug C$:/Users/alexm/CLionProjects/SlimeMaths/Quaternion.cpp || cmake_object_order_depends_target_SlimeMaths
+  DEP_FILE = CMakeFiles\SlimeMaths.dir\Quaternion.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  OBJECT_DIR = CMakeFiles\SlimeMaths.dir
+  OBJECT_FILE_DIR = CMakeFiles\SlimeMaths.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target SlimeMaths
@@ -81,7 +87,7 @@ build CMakeFiles/SlimeMaths.dir/Transform.cpp.obj: CXX_COMPILER__SlimeMaths_Debu
 #############################################
 # Link the executable SlimeMaths.exe
 
-build SlimeMaths.exe: CXX_EXECUTABLE_LINKER__SlimeMaths_Debug CMakeFiles/SlimeMaths.dir/main.cpp.obj CMakeFiles/SlimeMaths.dir/Mat4.cpp.obj CMakeFiles/SlimeMaths.dir/Vec3.cpp.obj CMakeFiles/SlimeMaths.dir/Transform.cpp.obj
+build SlimeMaths.exe: CXX_EXECUTABLE_LINKER__SlimeMaths_Debug CMakeFiles/SlimeMaths.dir/main.cpp.obj CMakeFiles/SlimeMaths.dir/Mat4.cpp.obj CMakeFiles/SlimeMaths.dir/Vec3.cpp.obj CMakeFiles/SlimeMaths.dir/Transform.cpp.obj CMakeFiles/SlimeMaths.dir/Quaternion.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\SlimeMaths.dir

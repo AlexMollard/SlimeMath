@@ -3,6 +3,6 @@ project(SlimeMaths)
 
 set(CMAKE_CXX_STANDARD 17)
 
-set(FILES main.cpp Mat4.cpp Vec3.cpp Transform.cpp Transform.h)
+set(FILES main.cpp Mat4.cpp Vec3.cpp Transform.cpp Transform.h Quaternion.cpp Quaternion.h)
 
 add_executable(SlimeMaths ${FILES})
