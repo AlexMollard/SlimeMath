@@ -6,13 +6,13 @@
 #define SLIMEMATHS_TRANSFORM_H
 
 #include "Matrix.h"
-#include "Vector.h"
+#include "Vector3.h"
 #include "Quaternion.h"
 
 // Create these functions
 //https://docs.unity3d.com/ScriptReference/Transform.html
 
-struct Transform{
+struct Transform {
 //Properties
     std::string name;                                       //Name of Transform.
     int childCount;                                         //The number of children the parent Transform has.
@@ -23,17 +23,17 @@ struct Transform{
     int hierarchyCount;                                     //The number of transforms in the transform's hierarchy data structure.
     Vec3 localEulerAngles;                                  //The rotation as Euler angles in degrees relative to the parent transform's rotation.
     Vec3 localPosition;                                     //Position of the transform relative to the parent transform.
-    Quaternion localRotation;                               //The rotation of the transform relative to the transform rotation of the parent.
+    Quaternionf localRotation;                               //The rotation of the transform relative to the transform rotation of the parent.
     Vec3 localScale;                                        //The scale of the transform relative to the GameObjects parent.
-    Matrix<float,4,4> localToWorldMatrix;                                //Matrix that transforms a point from local space into world space (Read Only).
+    Matrix<float, 4, 4> localToWorldMatrix;                                //Matrix that transforms a point from local space into world space (Read Only).
     Vec3 lossyScale;                                        //The global scale of the object (Read Only).
     Transform *parent;                                      //The parent of the transform.
     Vec3 position;                                          //The world space position of the Transform.
     Vec3 right;                                             //The red axis of the transform in world space.
     Transform *root;                                        //Returns the topmost transform in the hierarchy.
-    Quaternion rotation;                                    //A Quaternion that stores the rotation of the Transform in world space.
+    Quaternionf rotation;                                    //A Quaternion that stores the rotation of the Transform in world space.
     Vec3 up;                                                //The green axis of the transform in world space.
-    Matrix<float,4,4> worldToLocalMatrix;                                //Matrix that transforms a point from world space into local space (Read Only).
+    Matrix<float, 4, 4> worldToLocalMatrix;                                //Matrix that transforms a point from world space into local space (Read Only).
 
 //Methods
     void DetachChildren();                                  //Un-parents all children.
@@ -52,19 +52,21 @@ struct Transform{
     Rotate(Vec3 eulers);                                    //Use Transform.Rotate to rotate GameObjects in a variety of ways. The rotation is often provided as an Euler angle and not a Quaternion.
     void RotateAround(Vec3 point, Vec3 axis,
                       float angle);                         //Rotates the transform about axis passing through point in world coordinates by angle degrees.
-    void SetAsFirstSibling();                               //Move the transform to the start of the local transform list.
+    void
+    SetAsFirstSibling();                               //Move the transform to the start of the local transform list.
     void SetAsLastSibling();                                //Move the transform to the end of the local transform list.
     void SetParent(Transform *parent);                      //Set the parent of the transform.
     void SetPositionAndRotation(Vec3 position,
-                                Quaternion rotation);       //Sets the world space position and rotation of the Transform component.
+                                Quaternionf rotation);       //Sets the world space position and rotation of the Transform component.
     void SetSiblingIndex(int index);                        //Sets the sibling index.
     Vec3 TransformDirection(Vec3 direction);                //Transforms direction from local space to world space.
     Vec3 TransformPoint(Vec3 position);                     //Transforms position from local space to world space.
     Vec3 TransformVector(Vec3 vector);                      //Transforms vector from local space to world space.
-    void Translate(Vec3 translation);                       //Moves the transform in the direction and distance of translation.
+    void Translate(
+            Vec3 translation);                       //Moves the transform in the direction and distance of translation.
 
 private:
-    Matrix<float,4,4> matrix{};
+    Matrix<float, 4, 4> matrix{};
 };
 
 
