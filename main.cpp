@@ -1,6 +1,5 @@
 #include <iostream>
-#include "Transform.h"
-#include "Matrix.h"
+#include "SlimeMath.h"
 
 #define MACRO_VARIABLE_TO_STRING(Variable) (void(Variable),#Variable)
 
@@ -26,5 +25,11 @@ int main() {
     auto cross = Sm::cross(first, second);
     std::cout << "Cross: " << cross << std::endl;
 
+
+    Vec4 declan{10, 20, 30, 40};
+
+    auto alex = declan.normalized();
+    std::cout << "Alex: " << alex << std::endl;
+    
     return 0;
 }

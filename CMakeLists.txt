@@ -12,4 +12,4 @@ file(GLOB source_files CONFIGURE_DEPENDS
         "Math/*.h"
         )
 
-add_executable(SlimeMaths ${source_files})
+add_executable(SlimeMaths ${source_files} Math/SlimeMath.h)

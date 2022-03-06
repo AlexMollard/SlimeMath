@@ -49,13 +49,6 @@ cmake_ninja_workdir = C$:/Users/alexm/CLionProjects/SlimeMaths/build/
 
 build cmake_object_order_depends_target_SlimeMaths: phony || CMakeFiles/SlimeMaths.dir
 
-build CMakeFiles/SlimeMaths.dir/Transform.cpp.obj: CXX_COMPILER__SlimeMaths_Debug C$:/Users/alexm/CLionProjects/SlimeMaths/Transform.cpp || cmake_object_order_depends_target_SlimeMaths
-  DEP_FILE = CMakeFiles\SlimeMaths.dir\Transform.cpp.obj.d
-  FLAGS = -g -std=gnu++17
-  INCLUDES = -IC:/Users/alexm/CLionProjects/SlimeMaths/Math
-  OBJECT_DIR = CMakeFiles\SlimeMaths.dir
-  OBJECT_FILE_DIR = CMakeFiles\SlimeMaths.dir
-
 build CMakeFiles/SlimeMaths.dir/main.cpp.obj: CXX_COMPILER__SlimeMaths_Debug C$:/Users/alexm/CLionProjects/SlimeMaths/main.cpp || cmake_object_order_depends_target_SlimeMaths
   DEP_FILE = CMakeFiles\SlimeMaths.dir\main.cpp.obj.d
   FLAGS = -g -std=gnu++17
@@ -71,7 +64,7 @@ build CMakeFiles/SlimeMaths.dir/main.cpp.obj: CXX_COMPILER__SlimeMaths_Debug C$:
 #############################################
 # Link the executable SlimeMaths.exe
 
-build SlimeMaths.exe: CXX_EXECUTABLE_LINKER__SlimeMaths_Debug CMakeFiles/SlimeMaths.dir/Transform.cpp.obj CMakeFiles/SlimeMaths.dir/main.cpp.obj
+build SlimeMaths.exe: CXX_EXECUTABLE_LINKER__SlimeMaths_Debug CMakeFiles/SlimeMaths.dir/main.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\SlimeMaths.dir
