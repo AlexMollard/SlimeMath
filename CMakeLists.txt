@@ -3,6 +3,13 @@ project(SlimeMaths)
 
 set(CMAKE_CXX_STANDARD 17)
 
-set(FILES main.cpp Mat4.cpp Vec3.cpp Transform.cpp Transform.h Quaternion.cpp Quaternion.h)
+include_directories(Math)
 
-add_executable(SlimeMaths ${FILES})
+file(GLOB source_files CONFIGURE_DEPENDS
+        "*.h"
+        "*.cpp"
+        "Math/*.cpp"
+        "Math/*.h"
+        )
+
+add_executable(SlimeMaths ${source_files} Math/Vector.h)

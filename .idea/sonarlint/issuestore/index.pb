@@ -1,19 +1,15 @@
 
-8
-Mat4.cpp,c\7\c7c62852edf9dc336566282ffa5b8577f737fb74
-6
-Mat4.h,f\3\f3f2ad1847d0bee70eabde674f67b7cf1fa5e7b4
->
-Quaternion.cpp,1\6\16db533a90be6e58ea34e10c545511a565ce6189
-8
-Vec3.cpp,6\5\655768d77ec5737862e8c88a48bee188e59afb47
-6
-Vec3.h,f\8\f86254ec4b2681972d1feeedee8c07d45c440cd3
-8
-main.cpp,6\8\682a50d19e416195436708e48c7761923b8d6651
-<
-Quaternion.h,4\7\4700c321ad0080195c0e8bc5a61be3272c1275eb
+C
+Math/Quaternion.cpp,7\7\77dfd0ac3f51b0f680c42a9a2485433b2da1c564
+A
+Math/Quaternion.h,5\3\531089dcacf8809aedf489731104f842709ad0ef
+=
+Transform.cpp,d\d\dd2c9c2d15d1817792cfa4ba026fa079d4cbab3d
+=
+Math/Matrix.h,c\6\c6e48bbf65c269d33f8607f8cc3c2ff61a290175
 ;
 Transform.h,f\8\f8ac70cbd851806d234fc5d58a1d68825b0add79
 =
-Transform.cpp,d\d\dd2c9c2d15d1817792cfa4ba026fa079d4cbab3d
+Math/Vector.h,c\7\c7af6c5de1378ee4033e712c735e359c56c779a5
+8
+main.cpp,6\8\682a50d19e416195436708e48c7761923b8d6651

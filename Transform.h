@@ -5,13 +5,14 @@
 #ifndef SLIMEMATHS_TRANSFORM_H
 #define SLIMEMATHS_TRANSFORM_H
 
-#include "Mat4.h"
+#include "Matrix.h"
+#include "Vector.h"
 #include "Quaternion.h"
 
 // Create these functions
 //https://docs.unity3d.com/ScriptReference/Transform.html
 
-struct Transform : public Mat4 {
+struct Transform{
 //Properties
     std::string name;                                       //Name of Transform.
     int childCount;                                         //The number of children the parent Transform has.
@@ -24,7 +25,7 @@ struct Transform : public Mat4 {
     Vec3 localPosition;                                     //Position of the transform relative to the parent transform.
     Quaternion localRotation;                               //The rotation of the transform relative to the transform rotation of the parent.
     Vec3 localScale;                                        //The scale of the transform relative to the GameObjects parent.
-    Mat4 localToWorldMatrix;                                //Matrix that transforms a point from local space into world space (Read Only).
+    Matrix<float,4,4> localToWorldMatrix;                                //Matrix that transforms a point from local space into world space (Read Only).
     Vec3 lossyScale;                                        //The global scale of the object (Read Only).
     Transform *parent;                                      //The parent of the transform.
     Vec3 position;                                          //The world space position of the Transform.
@@ -32,7 +33,7 @@ struct Transform : public Mat4 {
     Transform *root;                                        //Returns the topmost transform in the hierarchy.
     Quaternion rotation;                                    //A Quaternion that stores the rotation of the Transform in world space.
     Vec3 up;                                                //The green axis of the transform in world space.
-    Mat4 worldToLocalMatrix;                                //Matrix that transforms a point from world space into local space (Read Only).
+    Matrix<float,4,4> worldToLocalMatrix;                                //Matrix that transforms a point from world space into local space (Read Only).
 
 //Methods
     void DetachChildren();                                  //Un-parents all children.
@@ -61,6 +62,9 @@ struct Transform : public Mat4 {
     Vec3 TransformPoint(Vec3 position);                     //Transforms position from local space to world space.
     Vec3 TransformVector(Vec3 vector);                      //Transforms vector from local space to world space.
     void Translate(Vec3 translation);                       //Moves the transform in the direction and distance of translation.
+
+private:
+    Matrix<float,4,4> matrix{};
 };
 
 

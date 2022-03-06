@@ -1,24 +1,21 @@
 #include <iostream>
 #include "Transform.h"
+#include "Matrix.h"
+
+#define MACRO_VARIABLE_TO_STRING(Variable) (void(Variable),#Variable)
 
 int main() {
-    Vec3 first(12.0f, 4.0f, 3.0f);
-    Vec3 second(91.0f, 3.0f, 24.0f);
+    Mat4 mat{};
+    mat.load_identity();
+    mat[0] = 12.0f;
 
-    std::cout << "x: " << first.cross(second).x << std::endl;
-    std::cout << "y: " << first.cross(second).y << std::endl;
-    std::cout << "z: " << first.cross(second).z << std::endl;
+    Mat4 second_mat{};
+    second_mat.reset();
+    second_mat[0] = 3.0f;
 
-    Transform engineObject{};
-    engineObject.m[0][0] = 1;
-    engineObject.m[1][1] = 11;
-    engineObject.m[2][2] = 1;
-    engineObject.m[3][3] = 1;
+    Mat4 newMat = mat + second_mat;
 
-
-    std::cout << engineObject.is_identity() << std::endl;
-    std::cout << engineObject.debug_output() << std::endl;
-
+    std::cout << MACRO_VARIABLE_TO_STRING(newMat) << ":\n" << newMat << std::endl;
 
     return 0;
 }

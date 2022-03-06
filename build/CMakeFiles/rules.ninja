@@ -48,10 +48,19 @@ rule RERUN_CMAKE
 
 
 #############################################
+# Rule for re-checking globbed directories.
+
+rule VERIFY_GLOBS
+  command = "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -P C:\Users\alexm\CLionProjects\SlimeMaths\build\CMakeFiles\VerifyGlobs.cmake
+  description = Re-checking globbed directories...
+  generator = 1
+
+
+#############################################
 # Rule for cleaning all built files.
 
 rule CLEAN
-  command = "C:\Program Files\JetBrains\CLion 2021.3\bin\ninja\win\ninja.exe" $FILE_ARG -t clean $TARGETS
+  command = C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\ninja\win\ninja.exe $FILE_ARG -t clean $TARGETS
   description = Cleaning all built files...
 
 
@@ -59,6 +68,6 @@ rule CLEAN
 # Rule for printing all primary targets available.
 
 rule HELP
-  command = "C:\Program Files\JetBrains\CLion 2021.3\bin\ninja\win\ninja.exe" -t targets
+  command = C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\ninja\win\ninja.exe -t targets
   description = All primary targets available:
 

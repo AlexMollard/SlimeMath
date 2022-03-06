@@ -1,7 +1,19 @@
 # ninja log v5
-3	291	6679891008478985	CMakeFiles/SlimeMaths.dir/main.cpp.obj	f63fb74718cecf40
-292	384	6679891009374145	SlimeMaths.exe	e45143cf38664022
-2	325	6679890650132584	CMakeFiles/SlimeMaths.dir/Mat4.cpp.obj	15a23e33003b9f7c
-2	86	6678332702654071	CMakeFiles/SlimeMaths.dir/Vec4.cpp.obj	b9a0f1592a2c8d3a
-2	75	6678338791751627	CMakeFiles/SlimeMaths.dir/Vec3.cpp.obj	2e2b190983ebe901
-14	230	6679890649177415	CMakeFiles/SlimeMaths.dir/Transform.cpp.obj	be8329d32d6683b1
+2	445	6682340870168382	CMakeFiles/SlimeMaths.dir/main.cpp.obj	f63fb74718cecf40
+445	537	6682340871068515	SlimeMaths.exe	267c690255430aa6
+2	34	6682354040437188	C:/Users/alexm/CLionProjects/SlimeMaths/build/CMakeFiles/cmake.verify_globs	a11fe1cc07da093f
+20	278	6682317388128069	CMakeFiles/SlimeMaths.dir/Transform.cpp.obj	be8329d32d6683b1
+3	59	6682346119048606	CMakeFiles/SlimeMaths.dir/Math/Quaternion.cpp.obj	155879f8fb1cb5c2
+34	218	6682354041487366	build.ninja	f2613deaf789d27
+1	26	0	C:/Users/alexm/CLionProjects/SlimeMaths/build/CMakeFiles/cmake.verify_globs	a11fe1cc07da093f
+4	58	6682354043347675	CMakeFiles/SlimeMaths.dir/Math/Quaternion.cpp.obj	155879f8fb1cb5c2
+2	426	6682354047018269	CMakeFiles/SlimeMaths.dir/Transform.cpp.obj	128958e63c4de338
+6	447	6682354047233306	CMakeFiles/SlimeMaths.dir/main.cpp.obj	de1b70e17d00c1f2
+447	541	6682354048138450	SlimeMaths.exe	2c2ea1dacc13a05c
+1	24	0	C:/Users/alexm/CLionProjects/SlimeMaths/build/CMakeFiles/cmake.verify_globs	a11fe1cc07da093f
+3	471	6682356572236886	CMakeFiles/SlimeMaths.dir/Transform.cpp.obj	128958e63c4de338
+5	511	6682356572636950	CMakeFiles/SlimeMaths.dir/main.cpp.obj	de1b70e17d00c1f2
+511	608	6682356573582106	SlimeMaths.exe	2c2ea1dacc13a05c
+1	25	0	C:/Users/alexm/CLionProjects/SlimeMaths/build/CMakeFiles/cmake.verify_globs	a11fe1cc07da093f
+3	432	6682357062412531	CMakeFiles/SlimeMaths.dir/main.cpp.obj	de1b70e17d00c1f2
+432	526	6682357063327683	SlimeMaths.exe	2c2ea1dacc13a05c
